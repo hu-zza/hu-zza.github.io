@@ -1,1 +1,38 @@
-remote-theme: hu-zza/jekyll-utd
+remote-theme: hu-zza/hu-zza.github.io
+
+# Site settings
+title: Szabó László András
+description: 'Personal website'
+url: 'https://zza.hu'
+baseurl: ''
+profilepic: '/images/profile.jpg'
+bkimage: '/images/cover.jpg'
+#google_analytics: UA-XXXXXX-X
+font_awesome: '03e56b669f.js'
+
+author:
+  name: 'Szabó László András'
+  email: protected@zza.hu
+  facebook_username: szabo.laszlo.andras
+  github_username:  hu-zza
+  linkedin_username:  hu-zza
+#  twitter_username: thomzuehlke  
+#  meetup_name: Azure-Meetup-Rostock-MV
+
+# Build settings
+destination: _site
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+#plugins: ['jekyll-paginate']
+exclude: ['README.md', 'screenshot-overview.png']
