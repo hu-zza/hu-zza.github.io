@@ -1,6 +1,5 @@
 <span class="mobile btn-mobile-menu">
-  <i class="fas fa-bars btn-mobile-menu__icon"></i>
-  <i class="far fa-times-circle btn-mobile-close__icon hidden"></i>
+  <i class="far fa-times-circle btn-mobile-close__icon panel-button"></i>
 </span>
 
 <header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.bkimage }})">
@@ -8,14 +7,16 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <img src="{{ site.baseurl }}{{ site.profilepic }}" class="user-image" alt="My Profile Photo">
+        <a href="{{ site.baseurl }}{{ site.profilepic }}" data-featherlight="{{ site.baseurl }}{{ site.profilepic }}">
+            <img src="{{ site.baseurl }}{{ site.profilepic }}" class="user-image" alt="My profile photo">
+        </a>
         <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
 
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">Working on the <a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of &micro;Bot">&micro;Bot</a> and learning Java 24/7 ;-)</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
-        <div class="navigation-wrapper">
+        <div class="navigation-wrapper visible">
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
@@ -77,11 +78,10 @@
             </ul>
           </nav>
 
-          <!--<nav class="cover-navigation cover-navigation--primary">-->
-          <nav class="cover-navigation navigation--social">
+          <nav class="cover-navigation navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item primary"><a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of &micro;Bot"><i class="fas fa-link fa-lg"></i>&nbsp;&micro;Bot</a></li>
-              <li class="navigation__item primary"><a href="https://git.zza.hu/" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
+              <li class="navigation__item"><a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of &micro;Bot"><i class="fas fa-link fa-lg"></i>&nbsp;&micro;Bot</a></li>
+              <li class="navigation__item"><a href="https://git.zza.hu/" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
             </ul>
           </nav>
 
