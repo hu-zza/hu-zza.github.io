@@ -13,7 +13,7 @@
     left: 40px;
     width: 0px; // draw vertical timeline line (2px)
     margin-left: -1.5px;
-    background-color: rgb(165, 147, 115);
+    background-color: #f1f1f1;
 }
 
 .timeline>li {
@@ -62,11 +62,11 @@
     width: 20px;
     height: 20px;
     margin-left: 0;
-    border: 7px solid rgb(165, 147, 115);
+    border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: rgb(165, 147, 115);
+    background-color: #f1f1f1;
 }
 
 .img-me {
@@ -75,11 +75,11 @@
     width: 100px;
     height: 100px;
     margin-left: 0;
-    border: 7px solid rgb(62, 56, 43);
+    border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: rgb(62, 56, 43);
+    background-color: #f1f1f1;
 }
 
 .timeline>li .timeline-image h4 {
@@ -129,7 +129,6 @@
 
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
-    color: rgb(165, 147, 115);
     margin-bottom: 0;
 }
 
@@ -223,3 +222,4 @@
         padding: 0 20px 20px;
     }
 }
+
