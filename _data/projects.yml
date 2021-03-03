@@ -1,26 +1,26 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: uBot
-  gh_user: hu-zza
-  repo: uBot
-  img: https://raw.githubusercontent.com/hu-zza/uBot/main/media/uBot_loop_v1.06.jpg
-  desc: The μBot is an educational floor robot based on ESP8266. It's still a prototype (v2.0).
+- name: '&micro;Bot, the educational floor robot'
+  gh_user: 'hu-zza'
+  repo: 'uBot'
+  img: 'images/projects/uBot_loop_v1.06_crop.jpg'
+  desc: 'Custom PCBs, extended MicroPython firmware, 3D printed frame, ...'
 
-- name: clim
-  gh_user: hu-zza
-  repo: clim
-  img: https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png
-  desc: Command Line Interface Menu
+- name: 'Command Line Interface Menu'
+  gh_user: 'hu-zza'
+  repo: 'clim'
+  img: 'images/projects/default.png'
+  desc: 'My first try to create a reusable Java library.'
 
-- name: Shared Bills Splitter
-  gh_user: hu-zza
-  repo: Shared_Bills_Splitter_-Hyperskill-
-  img: https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png
-  desc: A project from JetBrains Academy  https://hyperskill.org/projects/142
+- name: 'Shared Bills Splitter'
+  gh_user: 'hu-zza'
+  repo: 'Shared_Bills_Splitter_-Hyperskill-'
+  img: 'images/projects/hyperskill.png'
+  desc: 'Learning project: Spring Boot, JPA, Stream API.'
 
-- name: Code Sharing Platform
-  gh_user: hu-zza
-  repo: Code_Sharing_Platform_-Hyperskill-
-  img: https://upload.wikimedia.org/wikipedia/commons/2/2f/PowerShell_5.0_icon.png
-  desc: A project from JetBrains Academy  https://hyperskill.org/projects/130
+- name: 'Code Sharing Platform'
+  gh_user: 'hu-zza'
+  repo: 'Code_Sharing_Platform_-Hyperskill-'
+  img: 'images/projects/hyperskill.png'
+  desc: 'Learning project: Spring Boot, JPA, REST.'

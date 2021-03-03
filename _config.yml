@@ -1,8 +1,8 @@
 remote-theme: hu-zza/hu-zza.github.io
 
 # Site settings
-title: Szabó László András
-description: 'Personal website'
+title: 'Szabó László András'
+description: 'This is a link collection about me: My Java and other (&micro;Bot) projects, social pages, etc.'
 url: 'https://zza.hu'
 baseurl: ''
 profilepic: '/images/profile.jpg'
@@ -11,12 +11,12 @@ bkimage: '/images/cover.jpg'
 font_awesome: '03e56b669f.js'
 
 author:
-  name: 'Szabó László András'
+  name: 'Szabó László András // hu-zza'
   email: protected@zza.hu
   facebook_username: szabo.laszlo.andras
   github_username:  hu-zza
   linkedin_username:  hu-zza
-#  twitter_username: thomzuehlke  
+#  twitter_username: thomzuehlke
 #  meetup_name: Azure-Meetup-Rostock-MV
 
 # Build settings
@@ -35,4 +35,4 @@ kramdown:
   hard_wrap: false
 
 #plugins: ['jekyll-paginate']
-exclude: ['README.md', 'screenshot-overview.png']
+exclude: ['README.md']
