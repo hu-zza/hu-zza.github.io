@@ -17,6 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	display: block; }
 
 body {
+    background: rgb(62, 56, 43);
 	line-height: 1; }
 
 ol, ul {
@@ -238,18 +239,14 @@ pre {
 .footer {
 	display: block;
 	padding: 2em 0 0 0;
-	border-top: 2px solid #dddddd;
+	border-top: 2px solid rgb(165, 147, 115);
 	font-size: .7em;
-	color: #b3b3b3; }
+	color: rgb(165, 147, 115); }
 
 .footer__copyright {
 	display: block;
 	margin-bottom: .7em; }
-	.footer__copyright a {
-		color: #a6a6a6;
-		text-decoration: underline; }
-		.footer__copyright a:hover {
-			color: #b9301c; }
+
 
 .avatar,
 .logo {
