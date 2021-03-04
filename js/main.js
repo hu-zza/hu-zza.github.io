@@ -35,11 +35,19 @@ $(document).ready(function () {
   $.featherlight.defaults.openSpeed = 350;
   $.featherlight.defaults.closeSpeed = 350;
 
-  $("#id").html("<a href='#' title='Wait a sec...' target='_blank'><i class='fas fa-envelope fa-lg'></i><span class='label'>Wait a sec...</span></a>");
+  $("#id").html("<a href='#' title='Wait a sec...' target='_blank'><i class='fas fa-hourglass-start' style='font-size:95%;'></i><span class='label'>Wait a sec...</span></a>");
+
+  setTimeout(function() {
+      $("#id").html("<a href='#' title='Wait a sec...' target='_blank'><i class='fas fa-hourglass-half' style='font-size:95%;'></i><span class='label'>Wait a sec...</span></a>");
+  }, 700);
+
+  setTimeout(function() {
+      $("#id").html("<a href='#' title='Wait a sec...' target='_blank'><i class='fas fa-hourglass-end' style='font-size:95%;'></i><span class='label'>Wait a sec...</span></a>");
+  }, 1400);
 
   setTimeout(function() {
       $("#id").html("<a href='mailto:protected@zza.hu' title='Email protected@zza.hu' target='_blank'><i class='fas fa-envelope fa-lg'></i><span class='label'>Email</span></a>");
-  }, 1000);
+  }, 2000);
 
 
   $('.panel-button').click(function (e) {
