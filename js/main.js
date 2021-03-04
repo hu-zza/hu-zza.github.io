@@ -35,6 +35,13 @@ $(document).ready(function () {
   $.featherlight.defaults.openSpeed = 350;
   $.featherlight.defaults.closeSpeed = 350;
 
+  $("#id").html("<a href='#' title='Wait a sec...' target='_blank'><i class='fas fa-envelope fa-lg'></i><span class='label'>Wait a sec...</span></a>");
+
+  setTimeout(function() {
+      $("#id").html("<a href='mailto:protected@zza.hu' title='Email protected@zza.hu' target='_blank'><i class='fas fa-envelope fa-lg'></i><span class='label'>Email</span></a>");
+  }, 1000);
+
+
   $('.panel-button').click(function (e) {
       e.preventDefault();
       toggleTimeline();

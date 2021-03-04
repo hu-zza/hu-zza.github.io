@@ -164,3 +164,16 @@ pre.highlight code,
         display: inline-block;
     }
 }
+
+@media all and (max-height: 400px) {
+    .panel-cover__description,
+    .panel-cover__divider--secondary {
+        display: none;
+    }
+}
+
+@media all and (max-height: 320px) {
+    .panel-cover__divider {
+        display: none;
+    }
+}
