@@ -124,6 +124,13 @@ pre.highlight code,
     display: block;
 }
 
+.fa-hourglass-start,
+.fa-hourglass-half,
+.fa-hourglass-end {
+    margin: 1px;
+}
+
+
 @media all and (max-width: 960px) {
     .navigation-wrapper {
         display: none;
