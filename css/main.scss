@@ -21,6 +21,14 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
+.panel-cover {
+    transition: width 1s, max-width 1s;
+}
+
+.panel-cover--collapsed {
+    max-width: 700px;
+}
+
 .panel-cover--overlay {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -77,6 +85,7 @@ pre.highlight code,
 
 .footer__copyright {
     margin: 0 20px 10px;
+    line-height: 130%;
 }
 
 .user-image {
@@ -116,22 +125,23 @@ pre.highlight code,
     display: none;
 }
 
-.btn-mobile-menu.visible {
-    display: block;
-}
-
 .panel-cover__divider--secondary {
     display: block;
 }
 
-.fa-hourglass-start,
-.fa-hourglass-half,
-.fa-hourglass-end {
-    margin: 1px;
+
+
+@media all and (min-width: 1750px) {
+    .content-wrapper {
+        margin-left: 700px;
+    }
 }
 
-
 @media all and (max-width: 960px) {
+    .btn-mobile-menu.visible {
+        display: block;
+    }
+
     .navigation-wrapper {
         display: none;
         bottom: 0px;
@@ -141,7 +151,6 @@ pre.highlight code,
     .navigation-wrapper.visible {
         display: block;
     }
-
 
     .cover-navigation.navigation--social .navigation li {
         width: 20%;
@@ -155,6 +164,12 @@ pre.highlight code,
     .cover-navigation.navigation--primary .navigation li {
         width: 30%;
         padding: 1%;
+    }
+}
+
+@media all and (min-height: 600px) {
+    .panel-cover__divider {
+        margin: 25px auto;
     }
 }
 
