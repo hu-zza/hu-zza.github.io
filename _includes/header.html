@@ -16,9 +16,9 @@
         <p class="panel-cover__description">{{ site.author.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
-        <div class="navigation-wrapper visible">
+        <div class="navigation-wrapper">
 
-          <nav class="cover-navigation navigation--social">
+          <nav class="cover-navigation navigation--social visible">
             <ul class="navigation">
 
             {% if site.author.github_username %}
@@ -68,15 +68,15 @@
 
             <li class="navigation__item" id="id"></li>
             <li class="navigation__item primary--min"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.abbr.style }}">{{ site.author.highlight.abbr.content }}</a></li>
-            <li class="navigation__item primary--min"><a href="https://www.github.com/{{ site.author.github_username }}" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
+            <li class="navigation__item primary--min"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
 
             </ul>
           </nav>
 
-          <nav class="cover-navigation navigation--primary">
+          <nav class="cover-navigation navigation--primary visible">
             <ul class="navigation">
               <li class="navigation__item"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.txt.style }}">{{ site.author.highlight.txt.content }}</a></li>
-              <li class="navigation__item"><a href="https://www.github.com/{{ site.author.github_username }}" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
+              <li class="navigation__item"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
             </ul>
           </nav>
 

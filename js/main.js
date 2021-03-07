@@ -36,34 +36,23 @@ $(document).ready(function () {
     }, 2000);
 })
 
+
 function toggle() {
     toggleTimeline();
     toggleMobileView();
 }
 
 function toggleTimeline() {
-    if ($('.content-wrapper').hasClass('showing')){
-        closeTimeline();
-        $('.content-wrapper').removeClass('showing');
+    if ($('.content-wrapper').hasClass('visible')){
+        $('.panel-cover').removeClass('panel-cover--collapsed');
+        $('.content-wrapper').removeClass('visible');
     } else {
-        openTimeline();
-        $('.content-wrapper').addClass('showing');
+        $('.panel-cover').addClass('panel-cover--collapsed');
+        $('.content-wrapper').addClass('visible');
     }
-}
-
-function openTimeline() {
-    $('.content-wrapper').removeClass('slideOutRight');
-    $('.content-wrapper').addClass('slideInRight');
-    $('.panel-cover').addClass('panel-cover--collapsed');
-}
-
-function closeTimeline() {
-    $('.content-wrapper').removeClass('slideInRight');
-    $('.content-wrapper').addClass('slideOutRight');
-    $('.panel-cover').removeClass('panel-cover--collapsed');
 }
 
 function toggleMobileView() {
     $('.btn-mobile-menu').toggleClass('visible');
-    $('.navigation-wrapper').toggleClass('visible');
+    $('.cover-navigation').toggleClass('visible');
 }

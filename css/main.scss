@@ -22,16 +22,42 @@ pre.highlight code,
 }
 
 .panel-cover {
-    transition: width 1s, max-width 1s;
+    transition: width 1s, height 1s, max-width 1s, max-height 1s;
 }
 
-.panel-cover--collapsed {
-    max-width: 700px;
+.panel-main__inner {
+    padding: 10 60px;
+}
+
+.content-wrapper {
+    opacity: 0%;
+    transition: opacity 1s;
+}
+
+.content-wrapper.visible {
+    opacity: 100%;
+    transition: opacity 1.5s;
 }
 
 .panel-cover--overlay {
     background-color: rgba(0, 0, 0, 0);
 }
+
+.btn-mobile-menu {
+    display: block;
+    z-index: -1;
+    opacity: 0%;
+    transition: opacity 1.5s;
+}
+
+.btn-mobile-close__icon {
+    color: rgb(165, 147, 115);
+}
+
+.panel-cover__divider--secondary {
+    display: block;
+}
+
 
 .navigation--primary {
     display: inline-block;
@@ -97,10 +123,6 @@ pre.highlight code,
   border-radius:100%;
 }
 
-.btn-mobile-menu__icon,
-.btn-mobile-close__icon {
-    color: rgb(165, 147, 115);
-}
 
 .timeline:before {
     background-color: rgb(165, 147, 115);
@@ -121,35 +143,46 @@ pre.highlight code,
     color: rgb(165, 147, 115);
 }
 
-.btn-mobile-menu {
-    display: none;
-}
-
-.panel-cover__divider--secondary {
-    display: block;
-}
-
 
 
 @media all and (min-width: 1750px) {
     .content-wrapper {
         margin-left: 700px;
     }
+
+    .panel-cover--collapsed {
+        max-width: 700px;
+    }
 }
+
 
 @media all and (max-width: 960px) {
     .btn-mobile-menu.visible {
-        display: block;
+        z-index: 1000;
+        opacity: 100%;
+        transition: opacity 1.5s;
+    }
+
+    .panel-cover.panel-cover--collapsed {
+        height: 320px;
+    }
+
+    .panel-cover.panel-cover--collapsed .panel-main__inner {
+    	padding: 70px 0 0 0;
     }
 
     .navigation-wrapper {
-        display: none;
-        bottom: 0px;
         background: rgba(0, 0, 0, 0);
     }
 
-    .navigation-wrapper.visible {
-        display: block;
+    .cover-navigation {
+        height: 0px;
+        overflow: hidden;
+    }
+
+    .cover-navigation.visible {
+        height: 70px;
+        transition: height 1s;
     }
 
     .cover-navigation.navigation--social .navigation li {

@@ -3,7 +3,7 @@
 	 v2.0 | 20110126
 	 License: none (public domain)
 */
-@import "animate";
+/* @import "animate"; */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -725,12 +725,19 @@ input[type="tel"] {
 		padding: 60px 10%; }
 
 	.panel-cover__description {
-		display: block;
+		/*display: block;*/
+        font-size: .9em;
+        line-height: 1.7em;
+        transition: font-size 1.5s, line-height 2s;
 		max-width: 600px;
 		margin: 0 auto; }
 
 	.panel-cover__divider--secondary {
 		display: none; }
+
+    .panel-cover__divider {
+        transition: margin 1s;
+    }
 
 	.panel-cover {
 		width: 100%;
@@ -749,23 +756,28 @@ input[type="tel"] {
 				width: 60px;
 				border-width: 2px; }
 			.panel-cover.panel-cover--collapsed .panel-cover__description {
-				display: none; }
+				/*display: none;*/
+                font-size: 0;
+                line-height: 0;
+                transition: font-size 0s, line-height 0s;
+                overflow: hidden; }
 			.panel-cover.panel-cover--collapsed .panel-cover__divider {
-				display: none;
-				margin: 1em auto; }
+				/*display: none;*/
+                border: 0;
+				margin: 0 auto;}
 
-	.navigation-wrapper {
+	/*.navigation-wrapper {
 		display: none;
-		/*position: fixed;
+		position: fixed;
 		top: 42px;
 		right: 0;
 		left: 0;
 		width: 100%;
 		padding: 20px 0;
 		background: rgba(51, 51, 51, 0.98);
-		border-bottom: 1px solid rgba(255, 255, 255, 0.15);*/ }
+		border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
 		.navigation-wrapper.visible {
-			display: block; }
+			display: block; }*/
 
 	.cover-navigation {
 		display: block;
