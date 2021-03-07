@@ -2,17 +2,27 @@ remote-theme: hu-zza/hu-zza.github.io
 
 # Site settings
 title: 'Szabó László András'
-description: 'This is a link collection about me: My Java and other (&micro;Bot) projects, social pages, etc.'
+keywords: 'Szabó László András, hu-zza, μBot, Java'
+description: 'This is a link collection about me: My Java and other (μBot) projects, social pages, etc.'
 url: 'https://zza.hu'
-baseurl: ''
-profilepic: '/images/profile.jpg'
-bkimage: '/images/cover.jpg'
-#google_analytics: UA-XXXXXX-X
+baseurl: '' #'https://www.github.com/hu-zza'
+background: '/images/cover.jpg'
 font_awesome: '03e56b669f.js'
 
 author:
-    name: 'Szabó László András // hu-zza'
-    description: 'Making beta tests at JetBrains Academy, working on the project&nbsp;<a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of &micro;Bot">&micro;Bot</a><br>and learning Java 24/7 ;-)'
+    fullName: 'Szabó László András // hu-zza'
+    firstName: 'László András'
+    lastName: 'Szabó'
+    username: 'hu-zza'
+    gender: 'male'
+    picture:
+        link: '/images/profile.jpg'
+        url: 'http://hu-zza.github.io/images/profile.jpg'
+        secureUrl: 'https://hu-zza.github.io/images/profile.jpg'
+        type: 'image/jpeg'
+        width: '512'
+        height: '512'
+    description: 'Making beta tests at JetBrains Academy, working on the project&nbsp;<a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of μBot">μBot</a><br>and learning Java 24/7 ;-)'
     facebook_username: 'szabo.laszlo.andras'
     github_username:  'hu-zza'
     linkedin_username:  'hu-zza'
@@ -20,13 +30,13 @@ author:
 #    meetup_name: ''
 
     highlight:
-        title: 'Link to the project page of &micro;Bot'
+        title: 'Link to the project page of μBot'
         url: 'https://zza.hu/uBot'
         txt:
-            content: '<i class="fas fa-child fa-lg"></i>&nbsp;&micro;Bot'
+            content: '<i class="fas fa-child fa-lg"></i>&nbsp;μBot'
             style: ''
         abbr:
-            content: '&micro;'
+            content: 'μ'
             style: 'font-size: 19px; height: 20px;'
 
 

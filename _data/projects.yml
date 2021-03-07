@@ -1,7 +1,7 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: '&micro;Bot, the educational floor robot'
+- name: 'μBot, the educational floor robot'
   gh_user: 'hu-zza'
   repo: 'uBot'
   img: 'images/projects/uBot_loop_v1.06_crop.jpg'
