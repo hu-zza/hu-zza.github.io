@@ -5,7 +5,7 @@ title: 'Szabó László András'
 keywords: 'Szabó László András, hu-zza, μBot, Java'
 description: 'This is a link collection about me: My Java and other (μBot) projects, social pages, etc.'
 url: 'https://zza.hu'
-baseurl: '' #'https://www.github.com/hu-zza'
+baseurl: 'https://www.github.com/hu-zza'
 background: '/images/cover.jpg'
 font_awesome: '03e56b669f.js'
 
