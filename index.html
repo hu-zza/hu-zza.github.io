@@ -1,31 +1,27 @@
 ---
-title: 'Szabó László András // hu-zza'
 layout: 'default'
 robots: 'all'
 ---
-
-  <ul class="timeline">
-
-    {% for project in site.data.projects %}
-
-      <li class="timeline-inverted">
-        <div class="timeline-image">
-          <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">{{ project.name }}</a></h4>
-          </div>
-          <div class="timeline-body">
-            {{ project.desc | markdownify }}
-            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fas fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fas fa-code-branch"></i><span class="fork"> ...</span></a>&emsp;&emsp;
-              <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers"> ...</span></a>
-              <div style="height: 10px;"></div>
-          </div>
-        </div>
-      </li>
-    {% endfor %}
-
-  </ul>
+        <ul class="timeline">
+          {% for project in site.data.projects %}
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img class="img-me" src="{{ project.img | prepend: site.baseurl }}" alt="{{ project.name }}">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4><a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank" title="See on GitHub: {{ project.gh_user }}/{{ project.repo }}">{{ project.name }}</a></h4>
+              </div>
+              <div class="timeline-body">
+                {{ project.desc | markdownify }}
+                <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn" style="margin-top: 10px;">
+                  <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers"><i class="fas fa-star"></i><span class="star"> ...</span></a>&emsp;&emsp;
+                  <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network"><i class="fas fa-code-branch"></i><span class="fork"> ...</span></a>&emsp;&emsp;
+                  <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/watchers"><i class="far fa-eye"></i><span class="watchers"> ...</span></a>
+                  <div style="height: 10px;"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>

@@ -1,91 +1,73 @@
-<span class="mobile btn-mobile-menu projects-button">
-  <i class="far fa-times-circle btn-mobile-close__icon"></i>
-</span>
+    <span class="mobile btn-mobile-menu projects-button">
+      <i class="far fa-times-circle btn-mobile-close__icon"></i>
+    </span>
 
-<header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.background }})">
-  <div class="panel-main">
+    <header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.background }})">
+      <div class="panel-main">
 
-    <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-        <a href="{{ site.baseurl }}{{ site.author.picture.link }}" data-featherlight="{{ site.baseurl }}{{ site.author.picture.link }}">
-            <img src="{{ site.baseurl }}{{ site.author.picture.link }}" class="user-image" alt="My profile photo">
-        </a>
-        <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        <div class="panel-main__inner panel-inverted">
+        <div class="panel-main__content">
+            <a href="{{ site.baseurl }}{{ site.author.picture.link }}" data-featherlight="{{ site.baseurl }}{{ site.author.picture.link }}">
+                <img src="{{ site.baseurl }}{{ site.author.picture.link }}" class="user-image" alt="{{ site.author.picture.title }}" title="{{ site.author.picture.title }}">
+            </a>
+            <h1 class="panel-cover__title panel-title"><span title="My last name: {{ site.author.lastName }}">{{ site.author.lastName }}</span> <span title="My first name: {{ site.author.firstName }}">{{ site.author.firstName }}</span></h1>
+            <hr class="panel-cover__divider">
+            <p class="panel-cover__description">{{ site.author.description }}</p>
+            <hr class="panel-cover__divider panel-cover__divider--secondary">
 
-        <hr class="panel-cover__divider">
-        <p class="panel-cover__description">{{ site.author.description }}</p>
-        <hr class="panel-cover__divider panel-cover__divider--secondary">
+            <div class="navigation-wrapper">
 
-        <div class="navigation-wrapper">
+              <nav class="cover-navigation navigation--social visible">
+                <ul class="navigation">
 
-          <nav class="cover-navigation navigation--social visible">
-            <ul class="navigation">
+                {% if site.author.github_username %}<li class="navigation__item">
+                    <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                      <i class="fab fa-github fa-lg"></i>
+                      <span class="label">GitHub</span>
+                    </a>
+                  </li>{% endif %}
 
-            {% if site.author.github_username %}
-              <li class="navigation__item">
-                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="fab fa-github fa-lg"></i>
-                  <span class="label">GitHub</span>
-                </a>
-              </li>
-            {% endif %}
+                  {% if site.author.linkedin_username %}<li class="navigation__item">
+                    <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                      <i class="fab fa-linkedin fa-lg"></i>
+                      <span class="label">LinkedIn</span>
+                    </a>
+                  </li>{% endif %}
+                  {% if site.author.twitter_username %}<li class="navigation__item">
+                    <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                      <i class="fab fa-twitter fa-lg"></i>
+                      <span class="label">Twitter</span>
+                    </a>
+                  </li>{% endif %}
+                  {% if site.author.facebook_username %}<li class="navigation__item">
+                    <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                      <i class="fab fa-facebook fa-lg"></i>
+                      <span class="label">Facebook</span>
+                    </a>
+                  </li>{% endif %}
+                  {% if site.author.meetup_name %}<li class="navigation__item">
+                    <a href="https://www.meetup.com/{{ site.author.meetup_name }}" title="Meetup {{ site.author.meetup_name }}" target="_blank">
+                      <i class="fab fa-meetup fa-lg"></i>
+                      <span class="label">Meetup</span>
+                    </a>
+                  </li>{% endif %}
 
-            {% if site.author.linkedin_username %}
-              <li class="navigation__item">
-                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
-                  <i class="fab fa-linkedin fa-lg"></i>
-                  <span class="label">LinkedIn</span>
-                </a>
-              </li>
-            {% endif %}
+                  <li class="navigation__item" id="id"></li>
+                  <li class="navigation__item primary--min"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.abbr.style }}">{{ site.author.highlight.abbr.content }}</a></li>
+                  <li class="navigation__item primary--min"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
 
-            {% if site.author.twitter_username %}
-              <li class="navigation__item">
-                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                  <i class="fab fa-twitter fa-lg"></i>
-                  <span class="label">Twitter</span>
-                </a>
-              </li>
-            {% endif %}
+                </ul>
+              </nav>
 
-            {% if site.author.facebook_username %}
-              <li class="navigation__item">
-                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="fab fa-facebook fa-lg"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-            {% endif %}
-
-            {% if site.author.meetup_name %}
-            <li class="navigation__item">
-              <a href="https://www.meetup.com/{{ site.author.meetup_name }}" title="Meetup {{ site.author.meetup_name }}" target="_blank">
-                <i class="fab fa-meetup fa-lg"></i>
-                <span class="label">Meetup</span>
-              </a>
-            </li>
-            {% endif %}
-
-            <li class="navigation__item" id="id"></li>
-            <li class="navigation__item primary--min"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.abbr.style }}">{{ site.author.highlight.abbr.content }}</a></li>
-            <li class="navigation__item primary--min"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
-
-            </ul>
-          </nav>
-
-          <nav class="cover-navigation navigation--primary visible">
-            <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.txt.style }}">{{ site.author.highlight.txt.content }}</a></li>
-              <li class="navigation__item"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
-            </ul>
-          </nav>
-
+              <nav class="cover-navigation navigation--primary visible">
+                <ul class="navigation">
+                  <li class="navigation__item"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.txt.style }}">{{ site.author.highlight.txt.content }}</a></li>
+                  <li class="navigation__item"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
-
+        <div class="panel-cover--overlay"></div>
       </div>
-
-    </div>
-
-    <div class="panel-cover--overlay"></div>
-  </div>
-</header>
+    </header>

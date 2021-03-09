@@ -1,7 +1,7 @@
 remote-theme: hu-zza/hu-zza.github.io
 
 # Site settings
-title: 'Szabó László András'
+title: 'Szabó László András // hu-zza'
 keywords: 'Szabó László András, hu-zza, μBot, Java'
 description: 'This is a link collection about me: My Java and other (μBot) projects, social pages, etc.'
 url: 'https://zza.hu'
@@ -22,7 +22,8 @@ author:
         type: 'image/jpeg'
         width: '512'
         height: '512'
-    description: 'Making beta tests at JetBrains Academy, working on the project&nbsp;<a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of μBot">μBot</a><br>and learning Java 24/7 ;-)'
+        title: 'Me and my darling :-)'
+    description: 'Making beta tests at JetBrains Academy, working on the project&nbsp;<a href="https://zza.hu/uBot" target="_blank" title="Link to the project page of the μBot">μBot</a><br>and learning Java 24/7 ;-)'
     facebook_username: 'szabo.laszlo.andras'
     github_username:  'hu-zza'
     linkedin_username:  'hu-zza'
@@ -30,7 +31,7 @@ author:
 #    meetup_name: ''
 
     highlight:
-        title: 'Link to the project page of μBot'
+        title: 'Link to the project page of the μBot'
         url: 'https://zza.hu/uBot'
         txt:
             content: '<i class="fas fa-child fa-lg"></i>&nbsp;μBot'
