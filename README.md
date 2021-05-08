@@ -15,3 +15,4 @@ Main changes briefly:
 - delete some [jQuery](https://jquery.com/) methods (css, animate)
 - pure CSS animations
 - all libraries are self hosted (jQuery, Font Awesome, Featherlight)
+- multi-project feature (now only GitHub and plain links)
