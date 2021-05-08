@@ -1,25 +1,34 @@
 # projects section data
-# If you don't have language feature(language.yml is empty), ignore "i18n" items
-# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: 'OCP: Java SE 11 Developer'
+  type: 'link'
+  img: '/certificates/OCP_Java_SE_11/Oracle_Java_SE_11_Developer.png'
+  desc: 'I earned my first Oracle Certification credential! :-) Take a break and head to the Spring Boot! :-D'
+  url: 'https://www.credly.com/users/hu-zza'
+
+
 - name: 'μBot, the educational floor robot'
+  type: 'GitHub'
   gh_user: 'hu-zza'
   repo: 'uBot'
   img: '/images/projects/uBot_loop_v1.06_crop.jpg'
   desc: 'Custom PCBs, extended MicroPython firmware, 3D printed frame, ...'
 
 - name: 'Command Line Interface Menu'
+  type: 'GitHub'
   gh_user: 'hu-zza'
   repo: 'clim'
   img: '/images/projects/default.png'
   desc: 'My first try to create a reusable Java library.'
 
 - name: 'Shared Bills Splitter'
+  type: 'GitHub'
   gh_user: 'hu-zza'
   repo: 'Shared_Bills_Splitter_-Hyperskill-'
   img: '/images/projects/hyperskill.png'
   desc: 'Learning project: Spring Boot, JPA, Stream API.'
 
 - name: 'Code Sharing Platform'
+  type: 'GitHub'
   gh_user: 'hu-zza'
   repo: 'Code_Sharing_Platform_-Hyperskill-'
   img: '/images/projects/hyperskill.png'

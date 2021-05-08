@@ -48,20 +48,6 @@
                     </a>
                   </li>{% endif %}
 
-                  {% if site.author.twitter_username %}<li class="navigation__item">
-                    <a href="https://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
-                      <i class="fab fa-twitter fa-lg"></i>
-                      <span class="label">Twitter</span>
-                    </a>
-                  </li>{% endif %}
-
-                  {% if site.author.meetup_name %}<li class="navigation__item">
-                    <a href="https://www.meetup.com/{{ site.author.meetup_name }}" title="Meetup {{ site.author.meetup_name }}" target="_blank">
-                      <i class="fab fa-meetup fa-lg"></i>
-                      <span class="label">Meetup</span>
-                    </a>
-                  </li>{% endif %}
-
                   <li class="navigation__item" id="id"></li>
                   <li class="navigation__item primary--min"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.abbr.style }}">{{ site.author.highlight.abbr.content }}</a></li>
                   <li class="navigation__item primary--min"><a href="https://www.github.com/{{ site.author.github_username }}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
