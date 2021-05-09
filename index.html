@@ -10,7 +10,7 @@ robots: 'all'
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                <h4><a {% if project.type == 'link' %}href="{{project.url}}" title="More details about this: {{ project.name }}"{% endif %}{% if project.type == 'GitHub' %}href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" title="See on GitHub: {{ project.gh_user }}/{{ project.repo }}"{% endif %}  target="_blank">{{ project.name }}</a></h4>
+                <h4><a {% if project.type == 'GitHub' %}href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" title="See on GitHub: {{ project.gh_user }}/{{ project.repo }}"{% else %}href="{{project.url}}" title="External link with more details about this: {{ project.name }}"{% endif %}  target="_blank">{{ project.name }}</a></h4>
               </div>
               <div class="timeline-body">
                 {{ project.desc | markdownify }}
