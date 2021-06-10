@@ -1,8 +1,0 @@
-Options +FollowSymlinks -Indexes
-RewriteEngine On
-RewriteBase /
-
-RewriteRule ^link\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /link.php [L]
