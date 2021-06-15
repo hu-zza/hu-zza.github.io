@@ -40,10 +40,17 @@ pre.highlight code,
 }
 
 .about-wrapper {
+    color: rgb(165, 147, 115);
+    background: rgb(55, 50, 38);
     width: 90%;
+    padding: 40px 50px;
     max-width: 864px;
     min-width: 350px;
-    margin: 50px auto;
+    margin: auto;
+}
+
+.about-wrapper h1, h2, h3, h4, h5, h6 {
+    color: rgb(226, 84, 64);
 }
 
 .panel-cover--overlay {
@@ -68,10 +75,10 @@ pre.highlight code,
 .standalone-navigation-header {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     max-width: 864px;
     min-width: 350px;
-    margin: 20px auto 30px auto;
+    margin: 20px 0px 30px 0px;
 }
 
 .standalone-navigation-header .navigation li {
