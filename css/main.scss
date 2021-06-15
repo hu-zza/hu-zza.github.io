@@ -65,6 +65,18 @@ pre.highlight code,
     display: block;
 }
 
+.standalone-navigation-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px 5% 30px 5%;
+}
+
+.standalone-navigation-header .navigation li {
+    display: inline-block;
+    width: auto;
+    padding: 1px;
+}
 
 .navigation--primary {
     display: inline-block;

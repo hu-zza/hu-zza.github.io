@@ -1,11 +1,11 @@
 remote-theme: hu-zza/hu-zza.github.io
 
 # Site settings
+URL: 'https://zza.hu'
+baseurl: 'https://hu-zza.github.io'
 title: 'Szabó László András // hu-zza'
 keywords: 'Szabó László András, hu-zza, μBot, Java'
 description: 'This is a link collection about me: My Java and other (μBot) projects, social pages, etc.'
-url: 'https://zza.hu'
-#baseurl: 'https://hu-zza.github.io'
 background: '/images/cover.jpg'
 font_awesome: '03e56b669f.js'
 
@@ -25,8 +25,8 @@ author:
         title: 'Me and my darling :-)'
     description: 'Making beta tests at JetBrains Academy, working on the project&nbsp;<a href="https://zza.hu/uBot"
                   target="_blank" class="inline-link" title="Link to the project page of the μBot">μBot</a> and
-                  learning Java, Spring, JUnit,&nbsp;... 24/7 ;-) <a href="https://whoami.zza.hu" target="_blank"
-                  class="inline-link" title="Link to my full introduction">Read my introduction</a>'
+                  learning Java, Spring, JUnit,&nbsp;... 24/7 ;-) <a href="https://whoami.zza.hu" class="inline-link"
+                  title="Link to my full introduction">Read my introduction</a>'
     github_username: 'hu-zza'
     linkedin_username: 'hu-zza'
     credly_username: 'hu-zza'
