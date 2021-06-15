@@ -69,7 +69,9 @@ pre.highlight code,
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 20px 5% 30px 5%;
+    max-width: 864px;
+    min-width: 350px;
+    margin: 20px auto 30px auto;
 }
 
 .standalone-navigation-header .navigation li {
