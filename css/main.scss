@@ -39,6 +39,13 @@ pre.highlight code,
     transition: opacity 1.5s;
 }
 
+.about-wrapper {
+    width: 90%;
+    max-width: 864px;
+    min-width: 350px;
+    margin: 50px auto;
+}
+
 .panel-cover--overlay {
     background-color: rgba(0, 0, 0, 0);
 }
@@ -114,6 +121,11 @@ pre.highlight code,
     line-height: 130%;
 }
 
+.inline-link {
+  font-style: italic;
+  text-decoration: underline grey dotted;
+}
+
 .user-image {
   margin-bottom: 1.2em;
   position: relative;
@@ -122,7 +134,6 @@ pre.highlight code,
   border: 3px solid #fff;
   border-radius:100%;
 }
-
 
 .timeline:before {
     background-color: rgb(165, 147, 115);
