@@ -3,7 +3,7 @@
   type: 'link'
   img: '/certificates/OCP_Java_SE_11/Oracle_Java_SE_11_Developer.png'
   desc: 'I earned my first Oracle Certification credential! :-) Take a break and head to the Spring Boot! :-D'
-  url: 'https://www.credly.com/users/hu-zza'
+  url: 'https://zza.hu/OCP'
 
 
 - name: 'μBot, the educational floor robot'
@@ -36,6 +36,6 @@
 
 - name: 'Robotics @ People Team Summer Camp'
   type: 'Youtube'
-  url: 'https://www.youtube.com/watch?v=TKfZt3nyfeM'
+  url: 'https://zza.hu/PT-Robotics'
   img: '/images/projects/People_Team_2018.png'
   desc: 'We experimented and built, monitored and developed... Finally, we got into a duel! ;-)'
