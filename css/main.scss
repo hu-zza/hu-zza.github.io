@@ -75,6 +75,7 @@ pre.highlight code,
 .standalone-navigation-header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 864px;
     min-width: 350px;
@@ -175,6 +176,10 @@ pre.highlight code,
     color: rgb(165, 147, 115);
 }
 
+.highlights-flex {
+    display: flex;
+    justify-content: flex-start;
+}
 
 
 @media all and (min-width: 1750px) {
