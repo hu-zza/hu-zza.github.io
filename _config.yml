@@ -10,9 +10,10 @@ background: '/images/cover.jpg'
 font_awesome: '03e56b669f.js'
 
 author:
-    fullName: 'Szabó László András // hu-zza'
+    fullName: 'László András, Szabó // hu-zza'
     firstName: 'László András'
     lastName: 'Szabó'
+    callMe: 'Andrew'
     username: 'hu-zza'
     gender: 'male'
     picture:
