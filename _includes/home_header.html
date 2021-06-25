@@ -10,7 +10,9 @@
             <a href="{{ site.baseurl }}{{ site.author.picture.link }}" data-featherlight="{{ site.baseurl }}{{ site.author.picture.link }}">
                 <img src="{{ site.baseurl }}{{ site.author.picture.link }}" class="user-image" alt="{{ site.author.picture.title }}" title="{{ site.author.picture.title }}">
             </a>
-            <h1 class="panel-cover__title panel-title"><span title="My last name: {{ site.author.lastName }}">{{ site.author.lastName }}</span> <span title="My first name: {{ site.author.firstName }}">{{ site.author.firstName }}</span></h1>
+            <h1 class="panel-cover__title panel-title">
+                <span title="My first name, call me {{ site.author.callMe }}">{{ site.author.firstName }}</span>, <span title="My last name">{{ site.author.lastName }}</span>
+            </h1>
             <hr class="panel-cover__divider">
             <p class="panel-cover__description">{{ site.author.description }}</p>
             <hr class="panel-cover__divider panel-cover__divider--secondary">
