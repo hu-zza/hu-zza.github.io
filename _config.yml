@@ -3,16 +3,17 @@ remote-theme: hu-zza/hu-zza.github.io
 # Site settings
 baseurl: 'https://hu-zza.github.io'
 canonicalurl: 'https://zza.hu'
-title: 'Szabó László András // hu-zza'
-keywords: 'Szabó László András, hu-zza, μBot, Java'
+title: 'László András, Szabó // hu-zza'
+keywords: 'László András, Szabó, Szabó László András, hu-zza, μBot, Java'
 description: 'This is a link collection about me: My Java and other (μBot) projects, social pages, etc.'
 background: '/images/cover.jpg'
 font_awesome: '03e56b669f.js'
 
 author:
-    fullName: 'Szabó László András // hu-zza'
+    fullName: 'László András, Szabó // hu-zza'
     firstName: 'László András'
     lastName: 'Szabó'
+    callMe: 'Andrew'
     username: 'hu-zza'
     gender: 'male'
     picture:
