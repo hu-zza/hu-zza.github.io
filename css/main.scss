@@ -11,6 +11,20 @@ body {
   background: rgb(62, 56, 43);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: rgb(226, 84, 64);
+}
+
+a.inline {
+    font-style: italic;
+    text-decoration: underline grey dotted;
+}
+
+a.inline:hover {
+    text-decoration: underline grey solid;
+}
+  
+  
 pre.highlight,
 .highlight pre {
   padding: 10px;
@@ -23,6 +37,10 @@ pre.highlight code,
 
 .panel-cover {
     transition: width 1s, height 1s, max-width 1s, max-height 1s;
+}
+
+.panel-cover--overlay {
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .panel-main__inner {
@@ -39,7 +57,7 @@ pre.highlight code,
     transition: opacity 1.5s;
 }
 
-.about-wrapper {
+.subpage-wrapper {
     color: rgb(165, 147, 115);
     background: rgb(55, 50, 38);
     width: 90%;
@@ -49,12 +67,8 @@ pre.highlight code,
     margin: auto;
 }
 
-.about-wrapper h1, h2, h3, h4, h5, h6 {
-    color: rgb(226, 84, 64);
-}
-
-.panel-cover--overlay {
-    background-color: rgba(0, 0, 0, 0);
+.subpage-wrapper p:last-child {
+    margin-bottom: 60px;
 }
 
 .btn-mobile-menu {
@@ -143,11 +157,6 @@ pre.highlight code,
     line-height: 130%;
 }
 
-.inline-link {
-  font-style: italic;
-  text-decoration: underline grey dotted;
-}
-
 .user-image {
   margin-bottom: 1.2em;
   position: relative;
@@ -179,6 +188,16 @@ pre.highlight code,
 .highlights-flex {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+.highlights-flex a {
+    margin: 30px 15px;
+}
+
+.highlights-flex img{
+    width: 150px;
+    height: 150px;
 }
 
 
@@ -191,7 +210,6 @@ pre.highlight code,
         max-width: 700px;
     }
 }
-
 
 @media all and (max-width: 960px) {
     .btn-mobile-menu.visible {

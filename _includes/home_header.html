@@ -2,16 +2,16 @@
       <i class="far fa-times-circle btn-mobile-close__icon"></i>
     </span>
 
-    <header class="panel-cover" style="background-image: url({{ site.baseurl }}{{ site.background }})">
+    <header class="panel-cover" style="background-image: url({{ site.baseurl | append: site.background }})">
       <div class="panel-main">
 
         <div class="panel-main__inner panel-inverted">
         <div class="panel-main__content">
-            <a href="{{ site.baseurl }}{{ site.author.picture.link }}" data-featherlight="{{ site.baseurl }}{{ site.author.picture.link }}">
-                <img src="{{ site.baseurl }}{{ site.author.picture.link }}" class="user-image" alt="{{ site.author.picture.title }}" title="{{ site.author.picture.title }}">
+            <a href="{{ site.baseurl | append: site.author.picture.link }}" data-featherlight="{{ site.baseurl | append: site.author.picture.link }}">
+                <img src="{{ site.baseurl | append: site.author.picture.link }}" class="user-image" alt="{{ site.author.picture.title }}" title="{{ site.author.picture.title }}">
             </a>
             <h1 class="panel-cover__title panel-title">
-                <span title="My last name">{{ site.author.lastName }}</span>, <span title="My first name, call me {{ site.author.callMe }}">{{ site.author.firstName }}</span>
+                <span title="My last name">{{ site.author.lastName }}</span>, <span title="{{'My first name, call me ' | append: site.author.callMe }}">{{ site.author.firstName }}</span>
             </h1>
             <hr class="panel-cover__divider">
             <p class="panel-cover__description">{{ site.author.description }}</p>
@@ -22,38 +22,36 @@
               <nav class="cover-navigation navigation--social visible">
                 <ul class="navigation">
 
-                  {% if site.author.github_username %}<li class="navigation__item">
-                    <a href="https://zza.hu/GitHub" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  {% if site.author.github %}<li class="navigation__item">
+                    <a href="{% if site.author.github.url %}{{ site.author.github.url }}{% else %}{{'https://github.com/' | append: site.author.github.username }}{% endif %}" title="{{site.author.github.username | append: ' on GitHub'}}" target="_blank">
                       <i class="fab fa-github fa-lg"></i>
                       <span class="label">GitHub</span>
                     </a>
                   </li>{% endif %}
 
-                  {% if site.author.linkedin_username %}<li class="navigation__item">
-                    <a href="https://zza.hu/LinkedIn" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                  {% if site.author.linkedin %}<li class="navigation__item">
+                    <a href="{% if site.author.linkedin.url %}{{ site.author.linkedin.url }}{% else %}{{'https://www.linkedin.com/in/' | append: site.author.linkedin.username }}{% endif %}" title="{{ site.author.linkedin.username | append: ' on LinkedIn'}}" target="_blank">
                       <i class="fab fa-linkedin fa-lg"></i>
                       <span class="label">LinkedIn</span>
                     </a>
                   </li>{% endif %}
 
-                  {% if site.author.credly_username %}<li class="navigation__item">
-                    <a href="https://zza.hu/Credly" title="{{ site.author.credly_username }} on Credly" target="_blank">
+                  {% if site.author.credly %}<li class="navigation__item">
+                    <a href="{% if site.author.credly.url %}{{ site.author.credly.url }}{% else %}{{'https://www.credly.com/users/' | append: site.author.credly.username }}{% endif %}" title="{{ site.author.credly.username | append: ' on Credly'}}" target="_blank">
                       <i class="fas fa-certificate fa-lg"></i>
                       <span class="label">Credly</span>
                     </a>
                   </li>{% endif %}
 
-                  <li class="navigation__item" id="id0"></li>
                   <li class="navigation__item primary--min"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.abbr.style }}">{{ site.author.highlight.abbr.content }}</a></li>
-                  <li class="navigation__item primary--min"><a href="https://zza.hu/GitHub" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
-
+                  <li class="navigation__item primary--min"><a href="{% if site.author.github.url %}{{ site.author.github.url }}{% else %}{{'https://github.com/' | append: site.author.github.username }}{% endif %}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i></a></li>
                 </ul>
               </nav>
 
               <nav class="cover-navigation navigation--primary visible">
                 <ul class="navigation">
                   <li class="navigation__item"><a href="{{ site.author.highlight.url }}" target="_blank" title="{{ site.author.highlight.title }}" class="panel-button" style="{{ site.author.highlight.txt.style }}">{{ site.author.highlight.txt.content }}</a></li>
-                  <li class="navigation__item"><a href="https://zza.hu/GitHub" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
+                  <li class="navigation__item"><a href="{% if site.author.github.url %}{{ site.author.github.url }}{% else %}{{'https://github.com/' | append: site.author.github.username }}{% endif %}" target="_blank" title="Link to my projects" class="panel-button projects-button"><i class="fas fa-file-code fa-lg"></i>&nbsp;Projects</a></li>
                 </ul>
               </nav>
             </div>

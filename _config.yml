@@ -25,12 +25,21 @@ author:
         height: '512'
         title: 'Me and my darling :-)'
     description: 'Making beta tests at JetBrains Academy, working on the project&nbsp;<a href="https://zza.hu/uBot"
-                  target="_blank" class="inline-link" title="Link to the project page of the μBot">μBot</a> and
-                  learning Java, Spring, JUnit,&nbsp;... 24/7 ;-) <a href="https://whoami.zza.hu" class="inline-link"
+                  target="_blank" class="inline" title="Link to the project page of the μBot">μBot</a> and
+                  learning Java, Spring, JUnit,&nbsp;... 24/7 ;-) <a href="https://whoami.zza.hu" class="inline"
                   title="Link to my full introduction">Read my introduction</a>'
-    github_username: 'hu-zza'
-    linkedin_username: 'hu-zza'
-    credly_username: 'hu-zza'
+
+    github:
+        username: 'hu-zza'
+        url: 'https://zza.hu/GitHub'
+
+    linkedin:
+        username: 'hu-zza'
+        url: 'https://zza.hu/LinkedIn'
+
+    credly:
+        username: 'hu-zza'
+        url: 'https://zza.hu/Credly'
 
     highlight:
         title: 'Link to the project page of the μBot'

@@ -1,50 +1,47 @@
 ---
-layout: null
+    layout: null
 sitemap:
-  exclude: 'yes'
+exclude: 'yes'
 ---
 
-$(document).ready(function () {
-    $.featherlight.defaults.closeOnClick = 'anywhere';
-    $.featherlight.defaults.closeIcon = '';
-    $.featherlight.defaults.openSpeed = 350;
-    $.featherlight.defaults.closeSpeed = 350;
+    $(document).ready(() => {
+        $.featherlight.defaults.closeOnClick = 'anywhere';
+        $.featherlight.defaults.closeIcon = '';
+        $.featherlight.defaults.openSpeed = 350;
+        $.featherlight.defaults.closeSpeed = 350;
 
-    $('.projects-button').click(function (e) {
-        e.preventDefault();
-        toggle();
+        $('.projects-button').click(e => {
+            e.preventDefault();
+            toggle();
+        });
+
+
+        let animBoxAssets = [[["<a href='#' title='Wait a bit...' target='_blank'><i class='", "'></i><span class='label'>Wait a bit...</span></a>"], ["", "'></i>&nbsp;Wait a bit...</a>"]], [" fas fa-hourglass-start fa-lg ", " fas fa-hourglass-half fa-lg ", " fas fa-hourglass-end fa-lg "], [[[[[[[[[[["W","Y"]]]],["s"]],[[[[["W","R","+","I","C"]]]],[[["b"],[["l","J"]]]]],[[["h"],[["W"],["a"]]],["1"]],["w"]],[[[[["Y"],["s"]]]],[[[["S"],[["z"],["P"]]],["J"]],[[[["N","X"]]]]]],[[[["P"],["j"]],[["P"],[[["9","C"],["p"]]]],[[[["I"],["+"]],["y"]]]],[[[[["F"],["u"]],[["G","c"]]],[["N"],[["I"],["G"]]]],[[["z"],["x"]]]]]],["8"]],[[[[["m"],["B"]],[[[["S"],["Y"]]]]],["y"]],[[[[[[["G"],["9"]]]],[["l"],["b"]]],[["S"],[["w"],["Z"]]]],[[[[[["l"],["b"]]]]],[["Z"],["n"]]],["1"]],[["S"],[[[[["m"],["B"]]]],["Y"]]],[[[["s"],["1"]],["Z"]]]],[[[[["h"],[[["k"],["G"]],[[["g"],["x","2","Y"]]]]],[[[["9"],[["c"],["M","3"]]]]]],[["y"],[["P"],[[[["I"],["+"]]]]]]],[[["h"],["c"]],[["I"],[[[["Z"],["m"]]]]]]],[[[[["R"],["3"]],["l"]],[["y"],["b"]]],[["l"],[[[[[["3"],["R"]]]],["Y"]]]],[[[[[["d"],["p"]]],["R"]],[[[[["l","x","G"]]]]]],[[[[[["6"],["e"]]],[[["E","m"],["u"]]]],[[[["E","Z"],["B"]]]]],[[["i"],[["H"],["I"]]],[["a"],[[["H"],["U"]]]]]]],[[[[["i"],["B"]],[[[["I","1"]],[["L","h","p"],["h","m"]]]]],[[["9"],[["l"],["I"]]],[[["X"],[["0"],["Y"]]],[[["X","Z"]],[["J"],["n"]]],["Q"]]]],[[[[[["B"],["w"]]]],[[["b"],["p"]],["C"]]],[[[[["Z"],["W"]],[["9"],["0"]]],[[["Z","0","N"],["W"]]],[[["n","e"]],[["R"],["A"]]]],[[[["c"],["m"]]]]]],[[["S"],["P"]],[["F"],[[["W"],[["F"],["b"]]]],["J"]]]],[[["9"],[[["G"],[[["a","u"]],["F"]]],[[[["b","i"]]]]]]]],[[[[["E"],["G"]],["g"]],["P"]],[[[[[[["v"],["O"]],[["p"],["R","H","b"]]],["n"]],[[[["b"],["W"]],[["Z","l","J"],["i","0","j"]]],["F"]]],["B"]],[[["H"],["a"]]]]]],[["="],["="],[["L"],[[[[[[["P","+"]]],[[["h","9"],["P"]],["C"]],["g"]],[["W"],["4"]]]],[[["Y"],[[[["N","3"]]],["w"]]]]]]]],[[[[["a"],["u"]],[[[[[["c"],["h"]],["m"]],[[[["H","I"]],["i"]],["R"]]],[["D"],[[["l"],["d"]],["d"]]]],[["H"],["U"]]]],[[[[["c"],["0"]],[["6"],[[["M"],["H"]]]]],[[[[[["a","i"],["H"]]]],["0"]],["R"]],[[[[["a"],["g"]],["H"]],[[["G"],["P"]],["E"]]],[["j"],[[["Z"],[["l","J"]]]]]]],[[["j"],[["6"],[["d"],[["5"],["i"]]]]],[[["y"],["L"]],["9"]]],[[[[[[["E","m"]]]],["e"]]]]]],[[[[[[[[["X","a"],["s","R"]],["0"]]],[["i"],["B"]]],[["T"],["Z"]]],["I"]],[["T"],[["0"],["i"]]],[[[["D"],["B"]]],[[[["t"],["e"]],["B"]],["S"]],[["B"],[[[[["b"],["y"]]]],["0"]]],[["G"],[[["u"],[["y"],["a"]]],["l"]]]]],[[[["W"],["5"]],[[[[[["2","X"]]]],[["0"],["i"]]],[["Y"],[[[["J"],["s"]]]]]]],["r"]]],[[[[["m"],["J"]],[["m"],["b"]],[[[["a"],["T"]]],["4"]]],[["D"],[[[[["c"],["z"]]]]]]],[[[[[["I"],[["h"],[["Y","g"],["x","2"]]]],[["V"],["i"]]],[[["c"],["3"]]]]],[[[[[["g"],["k"]],[["h"],[["x","2","Y"]]]],[[["+"],[["i"],["I"]]],[["G"],["P"]]]],[[["c"],["3"]]]],[["M"],[[[[["H","d","1"],["R"]],[["W","L"],["J"]]],[["b"],["v"]]],[[[["n","I"],["m","b","h","B"]],["9"]],[["s"],["V"]]]]]],[[[[[["Z"],[["I"],["m"]]],["h"]]],[[[["3"],[["S","Y","m"],["Y","z","1"]]]],[[[["c"],["B","y"]]]]]],[[["9"],["M"]]]],[[[[[[["c"],["i"]]],["P"]],["G"]],[[[["v"],[["w","j"]]]]]],[[["E"],[[[["w","G"]]],[[["Z","g"],["m"]]]]],[[["t"],["b"]]]],[[[["J"],["v"]]],["b"]]]]],[[["t"],["D"]]],[[["Y"],[[[["4"],["T"]],["="]]]],[[[["j"],["w"]],["V"]],["v"]]]]],[],[]];
+
+        animBoxAssets[0][1][0] = animBoxAssets[0][0][0];
+        animBoxAssets[3][0] = document.createElement("li");
+        animBoxAssets[3][0].setAttribute("class", "navigation__item");
+        animBoxAssets[3][1] = animBoxAssets[3][0].cloneNode();
+
+        animBoxAssets[4][0] = document.querySelector("nav.navigation--social > ul > li.primary--min");
+        animBoxAssets[4][1] = document.querySelector("nav.standalone-navigation-header > ul > li:last-child");
+
+        for (let i = 0; i < 2; i++) {
+            if (animBoxAssets[4][i] !== null) {
+                if (i === 0) {
+                    animBoxAssets[4][i].before(animBoxAssets[3][i]);
+                } else {
+                    animBoxAssets[4][i].after(animBoxAssets[3][i]);
+                }
+
+                for (let j = 0; j < 4; j++) {
+                    let animation = j < 3 ? () => animBoxAssets[3][i].innerHTML = `${animBoxAssets[0][i][0]} ${animBoxAssets[1][j]} ${animBoxAssets[0][i][1]}` : () => animBoxAssets[3][i].innerHTML = atob(prepareSvg(animBoxAssets[2][i]).join(""));
+
+                    setTimeout(animation, j * 1000);
+                }
+            }
+        }
     });
-
-    waitTextStart = "<a href='#' title='Wait a bit...' target='_blank'><i class='";
-
-    waitTextEndSpan = "'></i><span class='label'>Wait a bit...</span></a>";
-
-    waitTextEnd = "'></i>&nbsp;Wait a bit...</a>";
-
-    result = [
-    [ "=", "=", "g", "P", "h", "9", "C", "P", "+", "4", "W", "Y", "w", "N", "3", "L", "8", "w", "W", "a", "h", "1", "W", "R", "+", "c", "C", "b", "l", "J", "W", "Y", "s", "d", "S", "P", "z", "N", "X", "Y", "s", "N", "G", "I", "u", "F", "G", "c", "z", "x", "j", "P", "p", "9", "C", "P", "+", "c", "y", "Z", "s", "1", "S", "Y", "m", "B", "S", "Z", "w", "9", "G", "b", "l", "Z", "n", "b", "l", "1", "S", "Y", "m", "B", "y", "c", "h", "Z", "2", "J", "9", "M", "3", "c", "h", "x", "2", "Y", "g", "k", "G", "P", "+", "c", "y", "a", "u", "F", "G", "b", "i", "9", "1", "J", "9", "Q", "X", "Z", "n", "J", "X", "Y", "0", "B", "y", "J", "1", "h", "m", "L", "h", "p", "n", "e", "A", "R", "W", "Z", "0", "N", "W", "Z", "0", "9", "m", "c", "w", "B", "C", "b", "p", "F", "W", "b", "F", "d", "S", "P", "l", "x", "G", "d", "p", "R", "H", "I", "n", "U", "H", "a", "u", "E", "m", "e", "6", "B", "E", "Z", "l", "R", "3", "Y", "l", "R", "3", "b", "y", "B", "n", "O", "v", "R", "H", "b", "p", "F", "W", "b", "n", "0", "j", "Z", "l", "J", "H", "a", "g", "E", "G", "P" ],
-    [ "=", "4", "T", "Y", "v", "w", "j", "V", "D", "t", "D", "c", "z", "J", "m", "b", "m", "4", "T", "a", "v", "w", "j", "P", "i", "c", "G", "b", "t", "E", "m", "Z", "g", "w", "G", "b", "v", "J", "3", "Y", "z", "1", "S", "Y", "m", "B", "y", "c", "h", "Z", "m", "I", "9", "M", "3", "c", "h", "x", "2", "Y", "g", "k", "G", "P", "+", "I", "i", "b", "v", "R", "H", "d", "1", "J", "W", "L", "s", "V", "m", "b", "h", "B", "n", "I", "9", "M", "3", "c", "h", "x", "2", "Y", "g", "I", "i", "V", "D", "B", "S", "e", "t", "B", "y", "b", "0", "B", "y", "a", "u", "l", "G", "T", "i", "0", "T", "Z", "s", "R", "X", "a", "0", "B", "i", "I", "r", "5", "W", "Y", "s", "J", "2", "X", "i", "0", "D", "d", "l", "d", "m", "c", "h", "R", "H", "I", "i", "U", "H", "a", "u", "E", "m", "e", "6", "5", "i", "d", "j", "9", "y", "L", "6", "M", "H", "c", "0", "R", "H", "a", "i", "0", "j", "Z", "l", "J", "H", "a", "g", "E", "G", "P" ]
-    ];
-
-
-    $("#id0").html(waitTextStart + "fas fa-hourglass-start fa-lg" + waitTextEndSpan);
-    $("#id1").html(waitTextStart + "fas fa-hourglass-start fa-lg" + waitTextEnd);
-
-    setTimeout(function() {
-        $("#id0").html(waitTextStart + "fas fa-hourglass-half fa-lg" + waitTextEndSpan);
-        $("#id1").html(waitTextStart + "fas fa-hourglass-half fa-lg" + waitTextEnd);
-    }, 700);
-
-    setTimeout(function() {
-        $("#id0").html(waitTextStart + "fas fa-hourglass-end fa-lg" + waitTextEndSpan);
-        $("#id1").html(waitTextStart + "fas fa-hourglass-end fa-lg" + waitTextEnd);
-    }, 1400);
-
-    setTimeout(function() {
-        $("#id0").html(atob(result[0].reverse().join("")));
-        $("#id1").html(atob(result[1].reverse().join("")));
-    }, 2000);
-})
 
 
 function toggle() {
@@ -53,7 +50,7 @@ function toggle() {
 }
 
 function toggleTimeline() {
-    if ($('.content-wrapper').hasClass('visible')){
+    if ($('.content-wrapper').hasClass('visible')) {
         $('.panel-cover').removeClass('panel-cover--collapsed');
         $('.content-wrapper').removeClass('visible');
     } else {
@@ -65,4 +62,15 @@ function toggleTimeline() {
 function toggleMobileView() {
     $('.btn-mobile-menu').toggleClass('visible');
     $('.cover-navigation').toggleClass('visible');
+}
+
+function prepareSvg(rawSvg) {
+    let result = rawSvg;
+
+    do {
+        result = result.reverse().flat();
+    } while (result.some(i => i instanceof Array));
+
+    result.reverse();
+    return result;
 }
