@@ -2,7 +2,6 @@
 ---
 @import "uno";
 @import "tables";
-@import "monokai";
 @import "timeline";
 
 /* Modifications */
@@ -22,17 +21,6 @@ a.inline {
 
 a.inline:hover {
     text-decoration: underline grey solid;
-}
-  
-  
-pre.highlight,
-.highlight pre {
-  padding: 10px;
-}
-
-pre.highlight code,
-.highlight pre code {
-  white-space: pre-wrap;
 }
 
 .panel-cover {
