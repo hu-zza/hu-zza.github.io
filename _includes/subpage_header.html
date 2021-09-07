@@ -1,7 +1,33 @@
     <header>
       <nav class="standalone-navigation-header">
         <ul class="navigation">
-          <li class="navigation__item"><a href="{{ site.canonicalurl }}" title="Link to the home page of my website" class="panel-button"><i class="fas fa-home fa-lg"></i>&nbsp;Home</a></li>
+          <li class="navigation__item">
+            <a href="{{ site.canonicalurl }}" title="Link to the home page of my website">
+              <i class="fas fa-home fa-lg"></i>
+              &nbsp;Home
+            </a>
+          </li>
+
+          {% if site.author.github %}<li class="navigation__item">
+            <a href="{% if site.author.github.url %}{{ site.author.github.url }}{% else %}{{'https://github.com/' | append: site.author.github.username }}{% endif %}" title="{{site.author.github.username | append: ' on GitHub'}}" target="_blank">
+              <i class="fab fa-github fa-lg"></i>
+              &nbsp;GitHub
+            </a>
+          </li>{% endif %}
+
+          {% if site.author.linkedin %}<li class="navigation__item">
+            <a href="{% if site.author.linkedin.url %}{{ site.author.linkedin.url }}{% else %}{{'https://www.linkedin.com/in/' | append: site.author.linkedin.username }}{% endif %}" title="{{ site.author.linkedin.username | append: ' on LinkedIn'}}" target="_blank">
+              <i class="fab fa-linkedin fa-lg"></i>
+              &nbsp;LinkedIn
+            </a>
+          </li>{% endif %}
+
+          {% if site.author.credly %}<li class="navigation__item">
+            <a href="{% if site.author.credly.url %}{{ site.author.credly.url }}{% else %}{{'https://www.credly.com/users/' | append: site.author.credly.username }}{% endif %}" title="{{ site.author.credly.username | append: ' on Credly'}}" target="_blank">
+              <i class="fas fa-certificate fa-lg"></i>
+              &nbsp;Credly
+            </a>
+          </li>{% endif %}
         </ul>
       </nav>
     </header>
