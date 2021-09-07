@@ -5,9 +5,30 @@
 @import "timeline";
 
 /* Modifications */
+html {
+  --scrollbar-bg: rgb(43, 39, 30);
+  --thumb-bg: rgb(89, 79, 62);
+}
 
 body {
   background: rgb(62, 56, 43);
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumb-bg) var(--scrollbar-bg);
+}
+
+body::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumb-bg) ;
+  border: 3px solid var(--scrollbar-bg);
+  border-radius: 6px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,6 +42,19 @@ a.inline {
 
 a.inline:hover {
     text-decoration: underline grey solid;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1em;
+  padding: 4px;
+  margin: 0 2px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+sup {
+	vertical-align: super;
+	font-size: 80%;
 }
 
 .panel-cover {
@@ -58,6 +92,33 @@ a.inline:hover {
 .subpage-wrapper p:last-child {
     margin-bottom: 60px;
 }
+
+.lengthy-line {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  white-space: nowrap;
+  overflow: scroll hidden;
+  line-height: 2rem;
+}
+
+
+.lengthy-line::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.lengthy-line::-webkit-scrollbar-thumb {
+  background: var(--thumb-bg);
+  border: 3px solid var(--scrollbar-bg);
+  border-radius: 6px;
+}
+
+.lengthy-line::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+  border-radius: 6px;
+}
+
 
 .btn-mobile-menu {
     display: block;
