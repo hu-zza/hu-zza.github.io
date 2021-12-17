@@ -1,7 +1,7 @@
 # projects section data
 - name: 'OCP: Java SE 11 Developer'
   type: 'link'
-  img: '/certificates/OCP_Java_SE_11/Oracle_Java_SE_11_Developer.png'
+  img: '/Certificate/OCP_Java_SE_11/Oracle_Java_SE_11_Developer.png'
   desc: 'I earned my first Oracle Certification credential! :-) Take a break and head to the Spring Boot! :-D'
   url: 'https://zza.hu/OCP'
 
