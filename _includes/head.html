@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     {% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title | append: ' &nbsp;|&nbsp; '}}{% endif %}{{ site.title }}</title>
     <meta name="author" content="{{ site.author.fullName }}">
     <meta name="copyright" content="{{ site.author.fullName }}">
     <meta name="keywords" content="{{ site.keywords }}"/>
