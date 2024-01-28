@@ -1,10 +1,23 @@
 # projects section data
+- name: 'screen'
+  type: 'GitHub'
+  gh_user: 'hu-zza'
+  repo: 'screen'
+  img: '/images/projects/default.png'
+  desc: 'A fresh initiative to make working with students even more worthwhile. :-) After some experiment with various approaches, I think this is the way.'
+
+- name: 'Lecture materials for NIX Tech LDC'
+  type: 'GitHub'
+  gh_user: 'andras-nix'
+  repo: 'edu'
+  img: '/images/projects/NIX.png'
+  desc: 'Besides my day job I also hold lectures at NIX Tech : Learning & Development Center as a Java mentor and lecturer. These repo tries to collect the relating notes and snippets.'
+
 - name: 'OCP: Java SE 11 Developer'
   type: 'link'
   img: '/Certificate/OCP_Java_SE_11/Oracle_Java_SE_11_Developer.png'
-  desc: 'I earned my first Oracle Certification credential! :-) Take a break and head to the Spring Boot! :-D'
+  desc: 'I earned my first Oracle Certification credential! :-)'
   url: 'https://zza.hu/OCP'
-
 
 - name: 'μBot, the educational floor robot'
   type: 'GitHub'
@@ -12,27 +25,6 @@
   repo: 'uBot'
   img: '/images/projects/uBot_loop_v1.06_crop.jpg'
   desc: 'Custom PCBs, extended MicroPython firmware, 3D printed frame, ...'
-
-- name: 'Command Line Interface Menu'
-  type: 'GitHub'
-  gh_user: 'hu-zza'
-  repo: 'clim'
-  img: '/images/projects/default.png'
-  desc: 'My first try to create a reusable Java library.'
-
-- name: 'Shared Bills Splitter'
-  type: 'GitHub'
-  gh_user: 'hu-zza'
-  repo: 'Shared_Bills_Splitter_-Hyperskill-'
-  img: '/images/projects/Hyperskill.png'
-  desc: 'Learning project: Spring Boot, JPA, Stream API.'
-
-- name: 'Code Sharing Platform'
-  type: 'GitHub'
-  gh_user: 'hu-zza'
-  repo: 'Code_Sharing_Platform_-Hyperskill-'
-  img: '/images/projects/Hyperskill.png'
-  desc: 'Learning project: Spring Boot, JPA, REST.'
 
 - name: 'Robotics @ People Team Summer Camp'
   type: 'Youtube'
